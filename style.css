@@ -1,0 +1,41 @@
+body{
+    display:flex;
+    min-height:100vh;
+    margin:0;
+    flex-direction: column;
+}
+.card{
+    background: url("images/bg-main-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-grow:2;
+}
+.form{
+    flex-grow:4;
+}
+.card>div{
+    
+    
+}
+.back-card{
+    background: url("images/bg-card-back.png");
+}
+.front-card{
+    background: url("images/bg-card-front.png");
+}
+
+@media only screen and (min-width: 768px) {
+    body{
+        flex-direction: row;
+    }
+    .card{
+        background: url("images/bg-main-desktop.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex-basis: 33%;
+        flex-grow: 2;
+    }
+    .form{
+        flex-grow: 4;
+    }
+}
