@@ -14,7 +14,10 @@ body{
     flex-grow:4;
 }
 .card>div{
-    
+    background-repeat: no-repeat;
+    background-size: contain;
+    height:25%;
+    width:100%;
     
 }
 .back-card{
@@ -22,6 +25,9 @@ body{
 }
 .front-card{
     background: url("images/bg-card-front.png");
+    
+    display:grid;
+    grid-template-columns: auto auto auto;
 }
 
 @media only screen and (min-width: 768px) {
@@ -32,10 +38,10 @@ body{
         background: url("images/bg-main-desktop.png");
         background-repeat: no-repeat;
         background-size: cover;
-        flex-basis: 33%;
+        flex-basis: 384px;
         flex-grow: 2;
     }
     .form{
-        flex-grow: 4;
+        flex-grow: 7;
     }
 }
